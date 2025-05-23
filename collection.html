@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayari Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Urdu Shayari Hub</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html" class="active">Shayari Collection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Shayari Collection -->
+    <section class="shayari-collection">
+        <h1>Shayari Collection</h1>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="love">Love</button>
+            <button class="filter-btn" data-category="friendship">Friendship</button>
+            <button class="filter-btn" data-category="sad">Sad</button>
+            <button class="filter-btn" data-category="inspirational">Inspirational</button>
+        </div>
+        <div class="shayari-grid" id="shayari-grid"></div>
+        <div class="pagination">
+            <button id="prev-page" disabled>Previous</button>
+            <span id="page-info"></span>
+            <button id="next-page">Next</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Urdu Shayari Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="shayaris.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
